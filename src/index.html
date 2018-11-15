@@ -3,8 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Timebox</title>
+
+    <!-- Import external stylesheets -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Import external scripts -->
+    <script type="application/javascript" src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="application/javascript" src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script type="application/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Import stylesheet -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Import scripts -->
+    <script type="application/javascript" src="script/timebox.js"></script>
 </head>
 <body>
-
+<div class="container">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <span id="hour" class="display-1">xx</span>
+            <span class="display-1">:</span>
+            <span id="minute" class="display-1">xx</span>
+            <span class="display-1">:</span>
+            <span id="second" class="display-1">xx</span>
+            <span class="display-1">:</span>
+            <span id="millisecond" class="display-1">xxx</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <form id="setupTimerForm">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Hours</span>
+                    </div>
+                    <input type="text" aria-label="Hours" class="form-control" id="hoursInput" placeholder="Hours">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Minutes</span>
+                    </div>
+                    <input type="text" aria-label="Hours" class="form-control" id="minutesInput" placeholder="Minutes">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Seconds</span>
+                    </div>
+                    <input type="text" aria-label="Hours" class="form-control" id="secondsInput" placeholder="Seconds">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit" id="setupTimerButton">Set Timer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <div class="input-group w-auto">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-success" id="startTimerButton">Start Timebox</button>
+                </div>
+                <div class="input-group-append">
+                    <button class="btn btn-outline-danger" id="stopTimerButton">Stop Timebox</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

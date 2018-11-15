@@ -24,8 +24,16 @@
   },
   "homepage": "https://github.com/eXsiLe95/Timebox#readme",
   "devDependencies": {
+    "@types/bootstrap": "^4.1.2",
+    "@types/jquery": "^3.3.22",
+    "sass": "^1.15.0",
     "scss": "^0.2.4",
     "tslint": "^5.11.0",
     "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.5"
   }
 }

@@ -4,6 +4,13 @@
         "tslint:recommended"
     ],
     "jsRules": {},
-    "rules": {},
+    "rules": {
+        "member-ordering": false,
+        "quotemark": [
+            true,
+            "single",
+            "avoid-escape"
+        ]
+    },
     "rulesDirectory": []
 }
