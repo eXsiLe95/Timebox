@@ -1,0 +1,31 @@
+{
+  "name": "timebox",
+  "version": "0.0.0",
+  "description": "A timebox web-app",
+  "main": "src/script/timebox.js",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eXsiLe95/Timebox.git"
+  },
+  "keywords": [
+    "jquery",
+    "typescript",
+    "timebox",
+    "scrum",
+    "countdown"
+  ],
+  "author": "Lukas Kimpel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eXsiLe95/Timebox/issues"
+  },
+  "homepage": "https://github.com/eXsiLe95/Timebox#readme",
+  "devDependencies": {
+    "scss": "^0.2.4",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  }
+}
